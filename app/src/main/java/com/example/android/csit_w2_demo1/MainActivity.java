@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Optimization of previous two lines of code.
         findViewById((R.id.btn1_act1)).setOnClickListener(new MyLsnr());
+        findViewById((R.id.btn2_act2)).setOnClickListener(new MyLsnr());
 
         //Created our owm listener MyLsnr
        /* button.setOnClickListener(new View.OnClickListener() {
@@ -35,15 +36,14 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
-    public void mOnClick(View view) {
-        textView2.setText("Clicked second button!");
-    }
-
     class MyLsnr implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
-            textView1.setText("Some other text");
+            if(view.getId()==R.id.btn1_act1)
+               textView1.setText("Some other text");
+            else if(view.getId()==R.id.btn2_act2)
+            textView2.setText("Clicked second button");
         }
     }
 }

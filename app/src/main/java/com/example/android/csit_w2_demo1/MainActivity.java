@@ -1,5 +1,6 @@
 package com.example.android.csit_w2_demo1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,8 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            if(view.getId()==R.id.btn1_act1)
-               textView1.setText(getString(R.string.label1));
+            if(view.getId()==R.id.btn1_act1) {
+                textView1.setText(getString(R.string.label1));
+                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
+            }
             else if(view.getId()==R.id.btn2_act2)
             textView2.setText("Clicked second button");
         }

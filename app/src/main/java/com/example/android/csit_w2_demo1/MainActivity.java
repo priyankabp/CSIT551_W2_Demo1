@@ -3,9 +3,12 @@ package com.example.android.csit_w2_demo1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import static com.example.android.csit_w2_demo1.utils.Utils.APP_TAG;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,36 +38,43 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Some other text");
             }
         });*/
+        Log.i(APP_TAG,"use the >> onCreate >> method");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+        Log.i(APP_TAG,"use the >> onStart >> method");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+        Log.i(APP_TAG,"use the >> onRestart >> method");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.i(APP_TAG,"use the >> onDestroy >> method");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        Log.i(APP_TAG,"use the >> onStop >> method");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        Log.i(APP_TAG,"use the >> onPause >> method");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Log.i(APP_TAG,"use the >> onResume >> method");
     }
 
     class MyLsnr implements View.OnClickListener {

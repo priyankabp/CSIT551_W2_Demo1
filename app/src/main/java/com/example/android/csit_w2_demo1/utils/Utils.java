@@ -5,5 +5,5 @@ package com.example.android.csit_w2_demo1.utils;
  */
 
 public class Utils {
-    final static String APP_TAG = "ACTIVITY 1 TAG";
+    public final static String APP_TAG = "ACTIVITY 1 TAG";
 }

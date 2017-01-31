@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
     }
-    
+
     class MyLsnr implements View.OnClickListener {
 
         @Override

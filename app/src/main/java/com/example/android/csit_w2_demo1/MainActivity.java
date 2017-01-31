@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView textView;
+    private TextView textView1;
+    private TextView textView2;
     private Button button;
 
     @Override
@@ -16,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textView = (TextView) findViewById(R.id.tv_1_act1);
+        textView1 = (TextView) findViewById(R.id.tv_1_act1);
+        textView2 = (TextView) findViewById(R.id.tv_2_act2);
 
         /*button = (Button) findViewById(R.id.btn1_act1);
         button.setOnClickListener(new MyLsnr());*/
@@ -33,11 +35,15 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
+    public void mOnClick(View view) {
+        textView2.setText("Clicked second button!");
+    }
+
     class MyLsnr implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
-            textView.setText("Some other text");
+            textView1.setText("Some other text");
         }
     }
 }

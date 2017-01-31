@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if(view.getId()==R.id.btn1_act1)
-               textView1.setText("Some other text");
+               textView1.setText(getString(R.string.label1));
             else if(view.getId()==R.id.btn2_act2)
             textView2.setText("Clicked second button");
         }

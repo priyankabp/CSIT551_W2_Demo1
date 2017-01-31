@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CSIT_W2_Demo1</string>
+    <string name="label1">This text is from xml file.</string>
 </resources>

@@ -17,8 +17,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textView = (TextView) findViewById(R.id.tv_1_act1);
-        button = (Button) findViewById(R.id.btn1_act1);
-        button.setOnClickListener(new MyLsnr());
+
+        /*button = (Button) findViewById(R.id.btn1_act1);
+        button.setOnClickListener(new MyLsnr());*/
+
+        //Optimization of previous two lines of code.
+        findViewById((R.id.btn1_act1)).setOnClickListener(new MyLsnr());
+
+        //Created our owm listener MyLsnr
        /* button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
